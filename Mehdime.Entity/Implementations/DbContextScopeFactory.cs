@@ -14,7 +14,11 @@ namespace Mehdime.Entity
     {
         private readonly IDbContextFactory _dbContextFactory;
 
-        public DbContextScopeFactory(IDbContextFactory dbContextFactory = null)
+        public DbContextScopeFactory()
+        {
+        }
+
+        public DbContextScopeFactory(IDbContextFactory dbContextFactory)
         {
             _dbContextFactory = dbContextFactory;
         }
